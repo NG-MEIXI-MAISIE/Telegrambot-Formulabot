@@ -12,7 +12,7 @@ telepot.api._pools = {
 telepot.api._onetime_pool_spec = (urllib3.ProxyManager, dict(proxy_url=proxy_url, num_pools=1, maxsize=1, retries=False, timeout=30))
 # end of the stuff that's only needed for free accounts
 
-bot = telepot.Bot('424644421:AAHThCErMsmTNZakMY_X0abiBv0aeVYWdbg')
+bot = telepot.Bot('')
 
 def handle(raw_msg):
     content_type, chat_type, chat_id = telepot.glance(raw_msg)
